@@ -1,7 +1,7 @@
 {
     "name": "i18next-to-xlsx",
     "description": "Tool to export/import i18next json files to/from excel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "author": {
         "name": "Kamil Krzywda",
