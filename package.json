@@ -1,0 +1,44 @@
+{
+    "name": "i18next-to-xlsx",
+    "description": "Tool to export/import i18next files to/from excel",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Kamil Krzywda",
+        "email": "krzywda.kamil@gmail.com",
+        "url": "http://kkhost.pl/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/piecioshka/i18next-to-xlsx.git"
+    },
+    "dependencies": {
+        "colors": "^1.3.3",
+        "glob": "^7.1.3",
+        "glob-promise": "^3.4.0",
+        "sequence-as-promise": "^1.2.0",
+        "xlsx": "^0.14.1",
+        "yargs": "^12.0.5"
+    },
+    "files": [
+        ".bin",
+        "src",
+        "index.js",
+        "package.json",
+        "README.md"
+    ],
+    "keywords": [
+        "encoding",
+        "checker",
+        "file",
+        "system",
+        "ascii",
+        "text",
+        "read",
+        "get",
+        "utf-8"
+    ],
+    "preferGlobal": true,
+    "main": "./index.js",
+    "bin": "./.bin/index.js"
+}
