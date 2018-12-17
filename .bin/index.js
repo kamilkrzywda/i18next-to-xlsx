@@ -19,26 +19,24 @@ yargs.option('import', {
 const argv = yargs.argv;
 
 const options = {
-    absolute: true,
     nodir: true,
     dot: true,
 };
 
 if (argv['import']) {
-    glob('*/*.json', options)
+    glob('*/*.xlsx', options)
         .then((files) => {
-            console.log(`Found ${files.length} json translation files`.gray);
-            i18nextToXlsx.export(files);
+            console.log(`Found ${files.length} xlsx translation files`.gray);
+            i18nextToXlsx.toJson(files);
         })
         .catch((err) => {
             console.error(err.message.red);
         });
-
 } else {
-    glob('*/*.xlsx', options)
+    glob('*/*.json', options)
         .then((files) => {
-            console.log(`Found ${files.length} xlsx translation files`.gray);
-            i18nextToXlsx.export(files);
+            console.log(`Found ${files.length} json translation files`.gray);
+            i18nextToXlsx.toXlsx(files);
         })
         .catch((err) => {
             console.error(err.message.red);
