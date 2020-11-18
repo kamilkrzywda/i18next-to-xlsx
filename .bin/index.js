@@ -12,7 +12,6 @@ yargs.usage('Usage: $0 [--import]');
 
 yargs.option('import', {
     alias: 'i',
-    default: false,
     desc: 'import from xlsx to json',
 });
 
@@ -20,10 +19,12 @@ const argv = yargs.argv;
 
 const options = {
     nodir: true,
-    dot: true,
+    dot: false,
 };
 
-if (argv['import']) {
+console.log(argv);
+
+if (argv.import || false) {
     glob('*/*.xlsx', options)
         .then((files) => {
             console.log(`Found ${files.length} xlsx translation files`.gray);

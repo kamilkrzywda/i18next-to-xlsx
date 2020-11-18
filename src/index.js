@@ -54,7 +54,8 @@ function toJson(files) {
                 const jsonData = XLSX.utils.sheet_to_json(worksheet);
                 let flatTranslations = {};
                 jsonData.forEach(t => flatTranslations[t.key] = t.value);
-                fs.writeFile(file.fileJsonName, JSON.stringify(dot.object(flatTranslations)), 'utf8', () => {
+                const jsonTranslations = dot.object(flatTranslations);
+                fs.writeFile(file.fileJsonName, JSON.stringify(jsonTranslations, null, 2), 'utf8', () => {
                     console.log('File ' + file.fileJsonName + ' saved');
                 });
             })
