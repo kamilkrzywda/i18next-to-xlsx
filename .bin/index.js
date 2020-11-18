@@ -22,8 +22,6 @@ const options = {
     dot: false,
 };
 
-console.log(argv);
-
 if (argv.import || false) {
     glob('*/*.xlsx', options)
         .then((files) => {
