@@ -1,11 +1,11 @@
 {
     "name": "i18next-to-xlsx",
     "description": "Tool to export/import i18next json files to/from excel",
-    "version": "1.0.1",
+    "version": "1.1.1",
     "license": "MIT",
     "author": {
         "name": "Kamil Krzywda",
-        "email": "krzywda.kamil@gmail.com",
+        "email": "krzywda.kamil@gmail.com"
     },
     "repository": {
         "type": "git",
